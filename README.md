@@ -37,3 +37,24 @@ This project implements a client-server communication system using UNIX signals 
 Run the following command to compile the project:
 ```bash
 make
+```
+This will produce two executables:
+```
+client
+server
+```
+### 2. Usage:
+Start the Server:
+```bash
+./server
+```
+The server will display its PID.
+
+Send a Message from the Client:
+```bash
+./client <server_pid> "<message>"
+```
+Replace <server_pid> with the PID displayed by the server.
+Replace <message> with the string you want to send.
+
+#The project uses ft_printf function which mimics the behaviour of the original printf function.
